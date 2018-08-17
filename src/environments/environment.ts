@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'https://api.github.com/users/feysal-Ibrahim?access_token=9541d64527fe21c2dd6091a359fb3b58e060b0ab'
+  apiUrl: 'https://api.github.com/users/',
+  token: '9541d64527fe21c2dd6091a359fb3b58e060b0ab'
 };
 
 /*

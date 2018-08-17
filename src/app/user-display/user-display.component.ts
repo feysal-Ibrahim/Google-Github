@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import  {Repo} from '../repo';
+import { user } from '../user';
+
 
 @Component({
   selector: 'app-user-display',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../github.service';
-import  {Repo} from '../repo';
+import {Repo} from '../repo';
 import { User } from '../user';
 
 
@@ -10,7 +10,10 @@ import { User } from '../user';
   styleUrls: ['./user-display.component.css']
 })
 export class UserDisplayComponent implements OnInit {
-
+  profiles: User;
+  repos: Repo;
+  users: any;
+  results: any;
   constructor() { }
 
   ngOnInit() {

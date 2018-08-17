@@ -1,5 +1,5 @@
 <div class="container-flex">
-    <div class="row">
+    <div class="search">
         <br>
         <app-user-search (user)='SearchTerm($event)'></app-user-search>
         <br>
@@ -11,15 +11,14 @@
         <br>
         <div class="col-md-6">
             <ul class="list-group">
-                <li class="list-group-item"><strong>User Name: </strong>{{profiles.login}}</li>
-                <li class="list-group-item"><strong>Public Repositories: </strong>{{profiles.public_repos}}</li>
-                <li class="list-group-item"><strong>Date Created: </strong><span><p>Created account on {{profiles.created_at | date}}</p></span></li>
+                <li class="list-group-item">User Name:{{profiles.login}}</li>
+                <li class="list-group-item">Public Repositories:{{profiles.public_repos}}</li>
+                <li class="list-group-item">Date Created:<span><p>Created account on {{profiles.created_at | date}}</p></span></li>
             </ul>
-            <br>
-            <strong>User Github: </strong><a class="btn btn-primary" href="{{profiles.html_url}}">View Profile</a>
-        </div>
-        <div class="col-md-6">
-            <img class="img-thumbnail github-avatar" src="{{profiles.avatar_url}}">
+            <br><strong>User Github</strong>:<a class="btn btn-primary" href="{{profiles.html_url}}">View Profile</a>
+
+            <div class="col-md-6">
+                <img class="img-thumbnail github-avatar" src="{{profiles.avatar_url}}">
+            </div>
         </div>
     </div>
-</div>

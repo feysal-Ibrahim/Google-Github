@@ -7,6 +7,7 @@ import { User } from '../user';
 @Component({
   selector: 'app-user-display',
   templateUrl: './user-display.component.html',
+  providers: [ GithubService],
   styleUrls: ['./user-display.component.css']
 })
 export class UserDisplayComponent implements OnInit {
@@ -14,7 +15,7 @@ export class UserDisplayComponent implements OnInit {
   repos: Repo;
   users: any;
   results: any;
-  constructor() { }
+  constructor( private github: GithubService ) { }
 
   ngOnInit() {
   }

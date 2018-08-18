@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpModule } from '@ngx-progressbar/http';
-import {GitService} from './git.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +26,7 @@ import { GitRepoComponent } from './git-repo/git-repo.component';
     NgProgressModule.forRoot(), // normal progress bar
     NgProgressHttpModule // progress bar to load http requests
   ],
-  providers: [GitService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

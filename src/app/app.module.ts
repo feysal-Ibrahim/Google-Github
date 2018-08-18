@@ -8,12 +8,11 @@ import { NgProgressHttpModule } from '@ngx-progressbar/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {gitDisplayComponent} from '../git/git-display.component';
-
+import { GitDisplayComponent } from './git-display/git-display.component';
 @NgModule({
   declarations: [
     AppComponent,
-    gitDisplayComponent
+    GitDisplayComponent,
   ],
   imports: [
     BrowserModule,

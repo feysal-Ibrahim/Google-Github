@@ -8,14 +8,12 @@ import { NgProgressHttpModule } from '@ngx-progressbar/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserDisplayComponent } from './user-display/user-display.component';
-import { UserSearchComponent } from './user-search/user-search.component';
+import {gitDisplayComponent} from '../git/git-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDisplayComponent,
-    UserSearchComponent
+    gitDisplayComponent
   ],
   imports: [
     BrowserModule,

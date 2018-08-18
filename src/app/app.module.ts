@@ -10,10 +10,14 @@ import {GitService} from './git.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitDisplayComponent } from './git-display/git-display.component';
+import { GitSearchComponent } from './git-search/git-search.component';
+import { GitRepoComponent } from './git-repo/git-repo.component';
 @NgModule({
   declarations: [
     AppComponent,
     GitDisplayComponent,
+    GitSearchComponent,
+    GitRepoComponent,
   ],
   imports: [
     BrowserModule,

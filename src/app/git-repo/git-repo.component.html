@@ -1,0 +1,17 @@
+<app-user-search (user)='SearchTerm($event)'>
+</app-user-search>
+<br>
+<div class="container-flex">
+    <div class="card-columns">
+        <div class="card" *ngFor='let repos of repos'>
+            <div class="card-body">
+                <h5 class="card-title">{{repos.name}}</h5>
+                <p class="card-text">{{repos.description}}</p>
+                <a class="btn btn-primary" href="{{repos.html_url}}">View This Repository</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated {{repos.created_at | date}}</small>
+            </div>
+        </div>
+    </div>
+</div>

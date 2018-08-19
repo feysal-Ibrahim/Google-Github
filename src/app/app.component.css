@@ -1,3 +1,15 @@
+.container-flex {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: #369;
+    float: left;
+    font-size: 20px;
+}
+
+
 /* .container-flex {
     background-color: black;
     padding: 60px;

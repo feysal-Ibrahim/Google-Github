@@ -15,7 +15,7 @@ export class GitService {
   results: any;
 
   constructor(private http: HttpClient) {
-    this.profiles = new User('', '', '', '', new Date());
+    this.profiles = new User('', '', 0, '', new Date());
     this.repos = new Repo('', '', '', new Date());
    }
 

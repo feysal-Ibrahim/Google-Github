@@ -1,7 +1,8 @@
-.container-flex {
-    background-color: black;
-}
-
 .blur {
     float: right;
+}
+
+.row li {
+    list-style: none;
+    text-decoration: none;
 }

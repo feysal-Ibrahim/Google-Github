@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { User } from './user';
 import { Repo } from './repo';
-
 @Injectable({
   providedIn: 'root'
 })
 export class GitService {
+  name: string;
 
   profiles: User;
   repos: Repo;
@@ -17,6 +17,7 @@ export class GitService {
   constructor(private http: HttpClient) {
     this.profiles = new User('', '', 0, '', new Date());
     this.repos = new Repo('', '', '', new Date());
+    this.name = 'feysal-Ibrahim';
    }
 
    userRequest(identity: string) {
@@ -28,7 +29,7 @@ export class GitService {
        created_at: Date;
      }
      const promise = new Promise((resolve, reject) => {
-       this.http.get<UserResponse>(environment.apiUrl + identity + environment.token).toPromise().then(
+       this.http.get<UserResponse>(environment.apiUrl + '?aceess_token=' + this.name + environment.token).toPromise().then(
          res => {
            this.profiles.login = res.login;
            this.profiles.avatar_url = res.avatar_url;

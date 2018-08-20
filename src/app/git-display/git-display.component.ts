@@ -19,7 +19,7 @@ export class GitDisplayComponent implements OnInit {
 
   SearchTerm(identity) {
 
-    // console.log(identity);
+
     this.gitService.userRequest(identity);
   }
   userRequest(identity) {

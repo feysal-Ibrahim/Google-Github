@@ -29,7 +29,7 @@ export class GitService {
        created_at: Date;
      }
      const promise = new Promise((resolve, reject) => {
-       this.http.get<UserResponse>(environment.apiUrl + '?aceess_token=' + this.name + environment.token).toPromise().then(
+       this.http.get<UserResponse>(environment.apiUrl + this.name + environment.token).toPromise().then(
          res => {
            this.profiles.login = res.login;
            this.profiles.avatar_url = res.avatar_url;

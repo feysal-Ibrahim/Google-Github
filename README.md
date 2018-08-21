@@ -1,6 +1,6 @@
 
 # Link To The Deployed Site
- You can view the project live by just clicking this following link https://feysal-ibrahim.github.io/Quote-compiler-app/
+ You can view the project live by just clicking this following link
  # GoogleGithub
 
 This is a simple Angular 5 application that allows a user to search for their github account and view their profiles.

@@ -1,7 +1,17 @@
 <div style="text-align:center">
     <div class="container-flex">
-        <h1>{{title}}</h1>
-        <app-git-display></app-git-display>
+        <div style="text-align:center">
+            <div class="container-flex">
+                <h1>{{title}}</h1>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <a class="navbar-brand" href="#">GitHub</a>
+                    <a class="navbar-brand" href="#">Repositories</a>
+                    <a class="navbar-brand" href="#">Repositories</a>
+                </nav>
+                <br>
+                <hr>
+                <app-git-display></app-git-display>
 
 
-        <router-outlet></router-outlet>
+                <router-outlet></router-outlet>

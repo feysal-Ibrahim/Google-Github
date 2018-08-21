@@ -6,8 +6,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://api.github.com/users/',
-  token: ' 2eb61ea98b96d1a08384ea11ca83ae628ff38f69'
+  apiUrl: 'https://api.github.com/users/feysal-Ibrahim',
+  token: 'a6581dd01091542f596e868eb08d5b0032db900b'
 };
 
 /*

@@ -12,6 +12,8 @@ import { GitDisplayComponent } from './git-display/git-display.component';
 import { GitSearchComponent } from './git-search/git-search.component';
 import { GitRepoComponent } from './git-repo/git-repo.component';
 import { DateCountPipe } from './date-count.pipe';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { DateCountPipe } from './date-count.pipe';
     GitSearchComponent,
     GitRepoComponent,
     DateCountPipe,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

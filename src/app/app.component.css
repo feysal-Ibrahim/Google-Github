@@ -5,8 +5,9 @@ h1 {
     font-size: 20px;
 }
 
-.container-flex {
+.card {
     background-color: black;
+    border-radius: 9px;
 }
 
 h1 {

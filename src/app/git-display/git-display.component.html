@@ -1,4 +1,4 @@
-<div class="container-flex">
+<div class="card">
     <div class="blur">
         <app-git-search (user)='SearchTerm($event)'></app-git-search>
         <br>
@@ -15,7 +15,7 @@
                 <li class="list-group-item"><strong>Date Created: </strong><span><p>Created account on {{profiles.created_at | date}}</p></span></li>
             </ul>
             <br>
-            <strong>User Github: </strong><a class="btn btn-primary" href="{{profiles.html_url}}">View Profile</a>
+            <em>User Github:</em><a class="btn btn-primary" href="{{profiles.html_url}}">View Profile</a>
         </div>
         <div class="col-md-6">
             <img class="img-thumbnail github-avatar" src="{{profiles.avatar_url}}">

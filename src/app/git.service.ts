@@ -29,7 +29,7 @@ export class GitService {
        created_at: Date;
      }
      const promise = new Promise((resolve, reject) => {
-       this.http.get<UserResponse>(environment.apiUrl + this.name + environment.token).toPromise().then(
+       this.http.get<UserResponse>(environment.apiUrl + this.name ).toPromise().then(
          res => {
            this.profiles.login = res.login;
            this.profiles.avatar_url = res.avatar_url;
@@ -52,7 +52,7 @@ export class GitService {
       created_at: Date;
     }
     const promise = new Promise((resolve, reject) => {
-      this.http.get<Repositories>(environment.apiUrl + identity + '/repos' + environment.token).toPromise().then(
+      this.http.get<Repositories>(environment.apiUrl + identity + '/repos').toPromise().then(
         res => {
           this.results = res;
           this.repos.repo_url = res.repo_url;

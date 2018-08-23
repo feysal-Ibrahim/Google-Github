@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
+  {path: 'search', component: GitSearchComponent},
+  {path: 'display', component: GitDisplayComponent },
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
 ];
